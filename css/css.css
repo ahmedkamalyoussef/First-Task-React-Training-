@@ -1,0 +1,454 @@
+/* Reset Box Model */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: "Work Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Landing Page Styles */
+.landing-page {
+    position: relative;
+    width: 100%;
+    height: 550px;
+}
+
+.cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/desktop/image-hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.48);
+}
+
+/* Navigation Styles */
+.nav {
+    align-items: center;
+    padding: 60px 10%;
+    display: flex;
+    height: 60px;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.landingBorder {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 250%;
+    position: absolute;
+    width: 30%;
+    min-width: 310px;
+    min-height: 200px;
+    max-width: 100%;
+    height: auto;
+    top: 35%;
+    border: solid white 1px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.landingBorder p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    padding: 5% 10%;
+    /* Adjust padding as needed */
+    box-sizing: border-box;
+}
+
+.img {
+    width: 800px;
+    height: 480px;
+    bottom: 0;
+    display: block;
+}
+
+.section {
+    position: absolute;
+    bottom: 0%;
+    right: 4%;
+    top: 41%;
+    height: 300px;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 5%;
+    box-sizing: border-box;
+    color: black;
+    border: 0px solid #000;
+}
+
+.section p {
+    text-transform: uppercase;
+    font-size: 2rem;
+    /* Adjust font size as needed */
+    margin-top: 2%;
+    line-height: 1.5;
+}
+
+.Creations {
+    position: relative;
+    bottom: 10px;
+    padding: 90px;
+}
+
+.Creations .head {
+    display: flex;
+    margin: 2%;
+    justify-content: space-between;
+    padding: 0% 7%;
+}
+
+.Creations .head button {
+    width: 120px;
+    height: 30px;
+    align-items: center;
+    background-color: #fff;
+    letter-spacing: .5ch;
+    margin-top: 2%;
+}
+
+.Creations .product {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    row-gap: 40px;
+    column-gap: 12px;
+    margin-left: 3%;
+
+
+}
+
+.Creations .product .Product-Class {
+    position: relative;
+    border: 1px solid;
+    width: 257px;
+    height: 450px;
+    justify-content: center;
+    box-shadow: 10px 10px 18px #000;
+
+
+}
+
+.Creations .product .text {
+    font-size: 30px;
+    color: #fff;
+    z-index: 2;
+    position: absolute;
+    bottom: 5%;
+    left: 25%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+.footer{
+    display: flex;
+    background-color: #000000e1;
+    height: 110px;
+    justify-content: space-between;
+    color: #fff;
+    margin-top: 10%;
+}
+.footer .footer-one{
+    justify-content: space-between;
+    padding: 0px 8%;
+    color: #fff;    
+}
+.footer .footer-two .footer-one-icons{
+    color: #fff;
+    margin-top: 30px;
+}
+.footer .footer-two .footer-one-icons span{
+    margin: 5px;
+}
+.footer .footer-two{
+    justify-content: space-between;
+    padding: 0px 8%;
+    color: #fff;
+
+}
+.footer .footer-one .link span a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.footer .footer-two .copy{
+    margin-top: 20px;
+}
+.seeall{
+    cursor: pointer;
+}
+.seeall-2{
+    display: none;
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}
+.seeAll{
+    display: none;
+    
+}
+.hide{
+    width: 120px;
+        height: 30px;
+        align-items: center;
+        background-color: #fff;
+        letter-spacing: .5ch;
+        margin-bottom: 0;
+        margin-left: 12%;
+        margin-top: 20px;
+        cursor: pointer;
+}
+.hide2{
+    display: none;
+}
+@media screen and (max-width: 900px) {
+    .main {
+        position: relative;
+        width: 100%;
+        padding: 5% 10%;
+        /* Adjust padding as needed */
+        box-sizing: border-box;
+    }
+    
+    .img {
+        width: 40%;
+        height: auto;
+        bottom: 0;
+        display: block;
+    }
+    
+    .section {
+        position: absolute;
+        bottom: 0%;
+        right: 4%;
+        top: 41%;
+        height: 250px;
+        max-width: 400px;
+        background-color: #fff;
+        padding: 5%;
+        box-sizing: border-box;
+        color: black;
+        border: 0px solid #000;
+    }
+    
+    .section p {
+        text-transform: uppercase;
+        font-size: 2rem;
+        /* Adjust font size as needed */
+        margin-top: 2%;
+        line-height: 1.5;
+    }
+}
+@media screen and (max-width: 620px) {
+    .cover {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/mobile/image-hero.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .nav ul {
+        display: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        min-width: 150px;
+        top: 79px;
+        right: 10%;
+        z-index: 1;
+    }
+
+    .nav ul::before {
+        content: "";
+        border-width: 15px;
+        border-style: solid;
+        border-radius: 20px;
+        position: absolute;
+        border-color: transparent transparent rgb(255, 255, 255) transparent;
+        top: -24px;
+        right: 3px;
+    }
+
+
+    .nav ul li a {
+        color: rgb(40, 1, 68);
+        font-weight: bold;
+    }
+
+    .nav ul li a {
+        display: block;
+        transition: 0.3s;
+        padding: 12px;
+
+    }
+
+    .nav ul li a:hover {
+        padding-left: 25px;
+
+    }
+
+    .nav ul li:not(:last-child) a {
+        border-bottom: solid 1px #ebe8e8;
+    }
+
+
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-toggle div {
+        margin: 5px;
+        background-color: aliceblue;
+        width: 30px;
+        height: 3px;
+        border-radius: 1px;
+        cursor: pointer;
+        transition: 0.8s;
+    }
+
+    .menu-toggle.active div:nth-child(1) {
+        transform: rotate(45deg) translate(4px, 4px);
+    }
+
+    .menu-toggle.active div:last-child {
+        transform: rotate(-45deg) translate(0px, -5px);
+    }
+
+    .menu-toggle.active div:nth-child(2) {
+        display: none;
+    }
+
+    .main{
+        justify-content: center;
+        padding: 25px;
+    }
+    .img {
+        width: 330px;
+        height: 200px;
+    }
+    
+    .section {
+        position: absolute;
+        bottom: 0%;
+        right: 6%;
+        top: 100%;
+        height: 200px;
+        width: 330px;
+        /* Adjust max-width as needed */
+        background-color: #fff;
+        padding: 5%;
+        /* Adjust padding as needed */
+        box-sizing: border-box;
+        color: black;
+        border: 0px solid #000;
+        text-align: center;
+    }
+
+    .Creations {
+        bottom: -300px;
+        margin-bottom: 100%;
+        justify-content: center;
+        padding: 25px;
+        width: 100%;
+    }
+    .Creations .product {
+        margin-left: 11%;
+        margin-right: auto;
+    }
+    .footer{
+        display: block;
+        height: auto;
+        text-align: center;
+        padding: 10px;
+    }
+    .footer .footer-one .link span{
+        display: block;
+        height: auto;
+        text-align: center;
+        padding: 10px;
+    }
+    .seeall{
+        display: none;
+        transition: .4s;
+
+    }
+    .seeall-2{
+        display: block;
+        transition: .4s;
+    }
+    .Creations .head h1 {
+        margin-left: 2%;
+    }
+    
+    .Creations  .seeall-2 {
+        width: 120px;
+        height: 30px;
+        align-items: center;
+        background-color: #fff;
+        letter-spacing: .5ch;
+        margin-top: 20px;
+        margin-bottom: 0;
+        margin-left: 31%;
+
+    }
+    .hide2{
+        width: 120px;
+            height: 30px;
+            align-items: center;
+            background-color: #fff;
+            letter-spacing: .5ch;
+            margin-bottom: 0;
+            margin-left: 12%;
+            margin-top: 20px;
+            cursor: pointer;
+    }
+    .hide{
+        display: none;
+    }
+
+}
+
+
